@@ -4,6 +4,7 @@ from PM_calc_design import Ui_PMCalc
 import locale
 
 
+# line for comment
 class Calculator(QMainWindow):
     def __init__(self):
         super(Calculator, self).__init__()
@@ -13,7 +14,6 @@ class Calculator(QMainWindow):
         self.ui.calculate_button.clicked.connect(self.calculate)
 
     def calculate(self):
-
         # Получаем значения из полей ввода
         development = self.ui.development_value.value()
         analytics = self.ui.analytics_value.value()
@@ -38,7 +38,6 @@ class Calculator(QMainWindow):
         self.ui.total_sum_value.setText(f' {formatted_total_sum}')
         self.ui.total_hours_value.setText(f' {total_hours:.2f}')
         self.ui.total_days_value.setText(f' {total_days:.2f}')
-
 
 
 if __name__ == "__main__":
